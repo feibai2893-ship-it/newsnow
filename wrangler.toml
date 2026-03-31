@@ -1,8 +1,8 @@
 #:schema node_modules/wrangler/config-schema.json
 
-name = "feibainewsnow"   # 可以改成你喜欢的项目名
+name = "newsnow-9e1"   # 可以改成你喜欢的项目名
 
-compatibility_date = "2026-03-30"   # 建议保持今天或较新的日期
+compatibility_date = "2026-03-31"   # 建议保持今天或较新的日期
 
 pages_build_output_dir = "dist/output/public"
 
@@ -13,3 +13,6 @@ pages_build_output_dir = "dist/output/public"
 
 # 其他可选配置
 vars = { }
+d1_databases = [
+  { binding = "DB", database_name = "newsnow-db", database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5" }
+]
