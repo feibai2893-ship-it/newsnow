@@ -1,16 +1,17 @@
 #:schema node_modules/wrangler/config-schema.json
 
-name = "newsnow-9e1"
+name = "newsnow"
 
 compatibility_date = "2026-03-31"
 
 pages_build_output_dir = "dist/output/public"
 
 # D1 数据库绑定（必须这样写）
-d1_databases = [
-  { binding = "DB", database_name = "newsnow-db", database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5" }
-]
+#d1_databases = [
+#  { binding = "DB", database_name = "newsnow-db", database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5" }
+#]
 
-# 可选：明确启用 Nitro 的数据库绑定
-[experimental]
-# 如果有这一节，可以留空或删除
+[[d1_databases]]
+binding = "NEWSNOW_DB"
+database_name = "newsnow-db"
+database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5"
