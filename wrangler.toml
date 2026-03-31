@@ -12,6 +12,6 @@ pages_build_output_dir = "dist/output/public"
 #]
 
 [[d1_databases]]
-binding = "NEWSNOW_DB"
+binding = "DB"
 database_name = "newsnow-db"
 database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5"
