@@ -1,18 +1,16 @@
 #:schema node_modules/wrangler/config-schema.json
 
-name = "newsnow-9e1"   # 可以改成你喜欢的项目名
+name = "newsnow-9e1"
 
-compatibility_date = "2026-03-31"   # 建议保持今天或较新的日期
+compatibility_date = "2026-03-31"
 
 pages_build_output_dir = "dist/output/public"
 
-# 如果你暂时不想用 D1 数据库，可以先不加下面这部分
-# d1_databases = [
-#   { binding = "DB", database_name = "你的数据库名称", database_id = "你的D1数据库ID" }
-# ]
-
-# 其他可选配置
-vars = { }
+# D1 数据库绑定（必须这样写）
 d1_databases = [
   { binding = "DB", database_name = "newsnow-db", database_id = "8bb160aa-2077-48ce-b6de-07008d094ff5" }
 ]
+
+# 可选：明确启用 Nitro 的数据库绑定
+[experimental]
+# 如果有这一节，可以留空或删除
